@@ -145,7 +145,7 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 1px solid var(--light-blue);
     border-radius: 50%;
     background-color: var(--gray-dark);
     height: 5rem;
