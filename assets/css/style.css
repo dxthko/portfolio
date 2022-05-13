@@ -38,6 +38,7 @@ h1 {
   font-weight: 700;
   line-height: 3.1rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .wrapper {
@@ -67,10 +68,6 @@ nav .wrapper svg {
 header {
   margin-top: 5.6rem;
   text-align: center;
-}
-
-header h1 {
-  padding-bottom: .8rem;
 }
 
 header h2 {
@@ -117,10 +114,6 @@ header h2 {
   margin-block: 5.6rem;
 }
 
-.about h1 {
-  padding-bottom: 1.4rem;
-}
-
 .about p {
   color: var(--gray);
   text-align: center;
@@ -133,17 +126,13 @@ header h2 {
   margin-bottom: 5.6rem;
 }
 
-.contacts h1 {
-  padding-bottom: 2.5rem;
-}
-
 .grid {
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 0.5fr;
-  gap: 6rem 6rem;
+  gap: 5rem 5rem;
   grid-auto-flow: row;
   grid-template-areas:
       ". ."
@@ -168,10 +157,7 @@ header h2 {
   .projects {
     display: flex;
     flex-direction: column;
-  }
-
-  .projects h1 {
-    padding-bottom: 3.2rem;
+    margin-bottom: 5.6rem;
   }
 
   .projects .frame {
@@ -182,7 +168,11 @@ header h2 {
 
     padding-top: 1.6rem;
     padding-inline: 1.6rem;
-    margin-bottom: 2.5rem;
+
+  }
+
+  .projects .frame:not(:last-child) {
+    margin-bottom: 2.4rem;
   }
 
   .projects .frame .inner__frame {
@@ -208,4 +198,9 @@ header h2 {
     color: var(--gray);
     font-size: 1rem;
     line-height: 1.3rem;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
   }
