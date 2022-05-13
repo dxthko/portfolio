@@ -125,23 +125,34 @@ header h2 {
 }
 
 .contacts h1 {
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .grid {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 9.5rem 8.8rem;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 6rem 6rem;
   grid-auto-flow: row;
   grid-template-areas:
       ". ."
       ". .";
   }
 
+  .grid .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--gray-dark);
+    height: 5rem;
+    width: 5rem;
+  }
+
   .grid svg path {
-    stroke: var(--light-blue);
+    fill: var(--light-blue);
   }
   
