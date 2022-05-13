@@ -23,14 +23,22 @@ body {
   font-family: var(--dm-sans);
 }
 
+span {
+  color: var(--light-blue);
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  text-align: center;
+}
+
 .wrapper {
   margin-inline: auto;
   padding-inline: 2.4rem;
   width: 36rem;
-}
-
-span {
-  color: var(--light-blue);
 }
 
 nav .wrapper {
@@ -57,11 +65,6 @@ header {
 }
 
 header h1 {
-  color: var(--white);
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3.1rem;
-  
   padding-bottom: .8rem;
 }
 
@@ -83,11 +86,12 @@ header h2 {
 }
 
 .buttons button {
-  height: 4rem;
+  border-radius: 1rem;
+  height: 3.7rem;
   width: fit-content;
   text-align: center;
   cursor: pointer;
-  padding: .8rem 3.2rem;
+  padding-inline: 3rem;
 }
 
 .buttons .btn1 {
@@ -101,3 +105,43 @@ header h2 {
   color: var(--white);
   background-color: transparent;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-block: 5.6rem;
+}
+
+.about h1 {
+  padding-bottom: 1.4rem;
+}
+
+.about p {
+  color: var(--gray);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.contacts h1 {
+  padding-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 9.5rem 8.8rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+      ". ."
+      ". .";
+  }
+
+  .grid svg path {
+    stroke: var(--light-blue);
+  }
+  
