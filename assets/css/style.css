@@ -28,6 +28,10 @@ body {
   overflow: overlay;
 }
 
+a {
+  text-decoration: none;
+}
+
 span {
   color: var(--light-blue);
 }
@@ -45,6 +49,10 @@ h1 {
   margin-inline: auto;
   padding-inline: 2.4rem;
   width: 36rem;
+}
+
+.margin {
+  margin-bottom: 5rem;
 }
 
 nav .wrapper {
@@ -66,7 +74,6 @@ nav .wrapper svg {
 }
 
 header {
-  margin-top: 5.6rem;
   text-align: center;
 }
 
@@ -111,7 +118,6 @@ header h2 {
 .about {
   display: flex;
   flex-direction: column;
-  margin-block: 5.6rem;
 }
 
 .about p {
@@ -122,10 +128,6 @@ header h2 {
   line-height: 140%;
 }
 
-.contacts {
-  margin-bottom: 5.6rem;
-}
-
 .grid {
   display: grid;
   align-items: center;
@@ -134,73 +136,108 @@ header h2 {
   grid-template-rows: 0.5fr 0.5fr;
   gap: 5rem 5rem;
   grid-auto-flow: row;
-  grid-template-areas:
-      ". ."
-      ". .";
   }
 
-  .grid .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--light-blue);
-    border-radius: 50%;
-    background-color: var(--gray-dark);
-    height: 5rem;
-    width: 5rem;
+.grid .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-blue);
+  border-radius: 50%;
+  background-color: var(--gray-dark);
+  height: 5rem;
+  width: 5rem;
   }
 
-  .grid svg path {
+.grid svg path {
     fill: var(--light-blue);
   }
 
-  .projects {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5.6rem;
+.projects {
+  display: flex;
+  flex-direction: column;
   }
 
-  .projects .frame {
-    background-color: var(--gray-dark);
-    border: 0.725px solid var(--gray-medium);
-    height: 17.4rem;
-    width: 32rem;
+.projects .frame {
+  background-color: var(--gray-dark);
+  border: 0.725px solid var(--gray-medium);
+  height: 17.4rem;
+  width: 32rem;
 
-    padding-top: 1.6rem;
-    padding-inline: 1.6rem;
+  padding-top: 1.6rem;
+  padding-inline: 1.6rem;
+}
 
-  }
+.projects .frame:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
 
-  .projects .frame:not(:last-child) {
-    margin-bottom: 2.4rem;
-  }
+.projects .frame .inner__frame {
+  background-color: var(--dark);
+  height: 10rem;
+  transition: 200ms;
+}
 
-  .projects .frame .inner__frame {
-    background-color: var(--dark);
-    height: 10rem;
-    transition: 200ms;
-  }
+.projects .frame div:hover {
+  border: 0.725px solid var(--light-blue);
+}
 
-  .projects .frame div:hover {
-    border: 0.725px solid var(--light-blue);
-  }
+.projects .frame h2 {
+  color: var(--white);
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
 
-  .projects .frame h2 {
-    color: var(--white);
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-    text-transform: uppercase;
+  padding-block: .4rem;
+}
 
-    padding-block: .4rem;
-  }
+.projects .frame p {
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
 
-  .projects .frame p {
-    color: var(--gray);
-    font-size: 1rem;
-    line-height: 1.3rem;
-  }
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .services {
-    display: flex;
-    flex-direction: column;
-  }
+.services .frame__two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+
+  background-color: var(--gray-dark);
+  color: var(--gray);
+  height: 14rem;
+  width: 32rem;
+
+  border-bottom: 0.3rem solid var(--light-blue);
+}
+
+.services .frame__two:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.services .frame__two h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.services .frame__two svg path {
+  stroke: var(--light-blue);
+}
+
+.grid .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-dark);
+  height: 10rem;
+  width: 10rem;
+}
