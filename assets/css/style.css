@@ -12,6 +12,10 @@
   font-size: 62.5%; /* 1rem = 10px */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -21,6 +25,7 @@ body {
 body {
   background-color: var(--dark);
   font-family: var(--dm-sans);
+  overflow: overlay;
 }
 
 span {
@@ -124,6 +129,10 @@ header h2 {
   line-height: 140%;
 }
 
+.contacts {
+  margin-bottom: 5.6rem;
+}
+
 .contacts h1 {
   padding-bottom: 2.5rem;
 }
@@ -155,4 +164,48 @@ header h2 {
   .grid svg path {
     fill: var(--light-blue);
   }
-  
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects h1 {
+    padding-bottom: 3.2rem;
+  }
+
+  .projects .frame {
+    background-color: var(--gray-dark);
+    border: 0.725px solid var(--gray-medium);
+    height: 17.4rem;
+    width: 32rem;
+
+    padding-top: 1.6rem;
+    padding-inline: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .projects .frame .inner__frame {
+    background-color: var(--dark);
+    height: 10rem;
+    transition: 200ms;
+  }
+
+  .projects .frame div:hover {
+    border: 0.725px solid var(--light-blue);
+  }
+
+  .projects .frame h2 {
+    color: var(--white);
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+
+    padding-block: .4rem;
+  }
+
+  .projects .frame p {
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
