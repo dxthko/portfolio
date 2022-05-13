@@ -1,0 +1,103 @@
+@import url(reset.css);
+
+:root {
+  --light-blue: #00ff9f;
+  --white: #f9f9f9;
+  --gray: #828282;
+  --gray-medium: #333333;
+  --gray-dark: #212121;
+  --dark: #171717;
+
+  --dm-sans: 'DM Sans', sans-serif;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: var(--dm-sans);
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+  width: 36rem;
+}
+
+span {
+  color: var(--light-blue);
+}
+
+nav .wrapper {
+  color: var(--white);
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2.4rem;
+}
+
+nav .wrapper svg {
+  cursor: pointer;
+}
+
+header {
+  margin-top: 5.6rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  
+  padding-bottom: .8rem;
+}
+
+header h2 {
+  color: var(--gray);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+
+  padding-bottom: 3.2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  
+}
+
+.buttons button {
+  height: 4rem;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  padding: .8rem 3.2rem;
+}
+
+.buttons .btn1 {
+  border: none;
+  color: var(--dark);
+  background-color: var(--light-blue);
+}
+
+.buttons .btn2 {
+  border: 1px solid var(--gray-medium);
+  color: var(--white);
+  background-color: transparent;
+}
