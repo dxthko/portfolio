@@ -1,7 +1,10 @@
 @import url(reset.css);
 
 :root {
+  font-size: 62.5%; /* 1rem = 10px */
+
   --light-blue: #00ff9f;
+  --lighter-blue: #73FFD6;
   --white: #f9f9f9;
   --gray: #828282;
   --gray-medium: #333333;
@@ -9,7 +12,7 @@
   --dark: #171717;
 
   --dm-sans: 'DM Sans', sans-serif;
-  font-size: 62.5%; /* 1rem = 10px */
+  --transition: background 500ms;
 }
 
 html {
@@ -55,6 +58,10 @@ h1 {
   margin-bottom: 5rem;
 }
 
+.fill {
+  fill: var(--light-blue);
+}
+
 nav .wrapper {
   color: var(--white);
 
@@ -75,6 +82,25 @@ nav .wrapper svg {
 
 header {
   text-align: center;
+}
+
+header h1 {
+  position: relative;
+}
+
+header h1::after {
+  content: '';
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 0;
+  height: .1rem;
+  background: var(--light-blue);
+  transition: .3s;
+}
+
+header h1:hover::after {
+  width: 100%;
 }
 
 header h2 {
@@ -104,15 +130,29 @@ header h2 {
 }
 
 .buttons .btn1 {
-  border: none;
+  border: 1px solid transparent;
   color: var(--dark);
   background-color: var(--light-blue);
+}
+
+.buttons .btn1:hover {
+  border: 1px solid var(--gray-medium);
+  color: var(--light-blue);
+  background-color: var(--dark);
+  transition: var(--transition);
 }
 
 .buttons .btn2 {
   border: 1px solid var(--gray-medium);
   color: var(--white);
   background-color: transparent;
+}
+
+.buttons .btn2:hover {
+  border: 1px solid transparent;
+  color: var(--dark);
+  background-color: var(--light-blue);
+  transition: var(--transition);
 }
 
 .about {
@@ -147,16 +187,17 @@ header h2 {
   background-color: var(--gray-dark);
   height: 5rem;
   width: 5rem;
-  }
+}
 
-.grid svg path {
-    fill: var(--light-blue);
-  }
+.grid .icon:hover {
+  background-color: var(--dark);
+  transition: var(--transition);
+}
 
 .projects {
   display: flex;
   flex-direction: column;
-  }
+}
 
 .projects .frame {
   background-color: var(--gray-dark);
