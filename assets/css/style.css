@@ -241,3 +241,17 @@ header h2 {
   height: 10rem;
   width: 10rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-dark);
+
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  height: 4rem;
+  width: 100%;
+}
