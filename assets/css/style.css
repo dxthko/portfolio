@@ -1,5 +1,7 @@
 @import url(reset.css);
 
+/* Variábles */
+
 :root {
   font-size: 62.5%; /* 1rem = 10px */
 
@@ -14,6 +16,8 @@
   --dm-sans: 'DM Sans', sans-serif;
   --transition: background 500ms;
 }
+
+/* General */
 
 html {
   scroll-behavior: smooth;
@@ -32,7 +36,12 @@ body {
 }
 
 a {
+  color: var(--light-blue);
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 span {
@@ -55,51 +64,139 @@ h1 {
 }
 
 .margin {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .fill {
   fill: var(--light-blue);
 }
 
+/* Font Awesome */
+
+.fa-bars {
+  font-size: 2rem;
+}
+
+.fa-xmark {
+  font-size: 2.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  
+  position: fixed;
+  top: 0;
+  
+  width: 100vw;
+  z-index: 100;
+}
+
 nav .wrapper {
+  background-color: var(--dark);
+  height: 5rem;
   color: var(--white);
 
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-top: 2.4rem;
 }
 
-nav .wrapper svg {
+nav button {
+  background-color: transparent;
+  color: var(--light-blue);
+  border: none;
   cursor: pointer;
 }
 
-header {
-  text-align: center;
+/* Menu expanded */
+
+body.menu-expanded {
+  overflow: hidden;
 }
 
-header h1 {
-  position: relative;
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
 }
 
-header h1::after {
-  content: '';
-  position: absolute;
-  bottom: 2rem;
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  transform: translateX(100%);
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 0;
-  height: .1rem;
-  background: var(--light-blue);
-  transition: .3s;
+  background: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-height);
+
+  transition: transform 300ms;
+  transform: translateX(0);
 }
 
-header h1:hover::after {
+.menu ul:nth-child(1) {
+  color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  margin-top: 7rem;
+  padding-bottom: 4rem;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+
+.menu .social__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  fill: var(--light-blue);
+}
+
+.menu .social__links svg:hover {
+  filter: drop-shadow(0px 1px 10px #73FFD6);
+  transition: .5s;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 100;
+}
+
+/* Header */
+
+header {
+  padding-top: 10rem;
+  text-align: center;
   width: 100%;
 }
 
