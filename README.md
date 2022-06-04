@@ -6,17 +6,17 @@ O design vem do desafio nº 09 do Iuri Silva (ou Iuri Code), criador da Codelân
 
 ## 🔗 Links úteis
 
-- [Deploy do projeto](https://portfolio-sigma-wheat-23.vercel.app/).
-- [LinkedIn](https://www.linkedin.com/in/hsp/).
-- [E-mail](mailto:h.sp97@hotmail.com).
-- [Instagram](https://www.instagram.com/irythill/).
-- [Twitter](https://twitter.com/dxthko).
+- [Deploy do projeto](https://portfolio-sigma-wheat-23.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/hsp/)
+- [E-mail](mailto:h.sp97@hotmail.com)
+- [Instagram](https://www.instagram.com/irythill/)
+- [Twitter](https://twitter.com/dxthko)
 
 ## Codelândia
 
-- [Codelândia](https://discord.gg/wNCWTVuxyz).
-- [Iuri Code](https://www.linkedin.com/in/iuricode/).
-- [Desafios](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/).
+- [Codelândia](https://discord.gg/wNCWTVuxyz)
+- [Iuri Code](https://www.linkedin.com/in/iuricode/)
+- [Desafios](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/)
 
 ##
 
