@@ -15,7 +15,7 @@
     />
     <script src="https://kit.fontawesome.com/ef4c920953.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body id="home">
 
     <nav>
       <div class="wrapper">
@@ -128,8 +128,8 @@
         <h1>Hello, I am Henrique Souza</h1>
         <h2>Front-end Developer & IT Student</h2>
         <div class="buttons">
-          <a href="#"><button class="btn1">Download CV</button></a>
-          <a href="#"><button class="btn2">Get in touch!</button></a>
+          <a href="#"><button class="button button--download">Download CV</button></a>
+          <a href="https://wa.me/5551998942097" target="_blank"><button class="button button--contact">Get in touch!</button></a>
         </div>
       </div>
     </header>
@@ -138,24 +138,21 @@
       <div class="wrapper">
         <h1>About me</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Welcome! My name is Henrique Souza and I'm a freelancer Front-end developer and also an IT Student at IFRS. I've been studying HTML, CSS and JavaScript since June of 2021 and started working on my own projects at the beginning of 2022. I don't have any experience on working for other's projects but that's exactly what I'm looking for right now! You can find all my social medias right below 🖤.
         </p>
       </div>
     </section>
 
-    <section class="contacts margin">
+    <section class="contact margin">
       <div class="wrapper">
-        <h1>Social links</h1>
+        <h1>Social medias</h1>
 
-        <div class="grid">
+        <div class="medias">
           <a href="mailto:h.sp97@hotmail.com" target="_blank"
-            ><div class="icon">
+            ><div class="icon__background">
               <svg
-                width="22"
-                height="22"
+                width="26"
+                height="26"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -170,10 +167,10 @@
           </a>
 
           <a href="https://www.linkedin.com/in/hsp/" target="_blank"
-            ><div class="icon">
+            ><div class="icon__background">
               <svg
-                width="22"
-                height="22"
+                width="26"
+                height="26"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,10 +185,10 @@
           </a>
 
           <a href="https://www.instagram.com/irythill/" target="_blank"
-            ><div class="icon">
+            ><div class="icon__background">
               <svg
-                width="22"
-                height="22"
+                width="26"
+                height="26"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -206,10 +203,10 @@
           </a>
 
           <a href="https://wa.me/5551998942097" target="_blank"
-            ><div class="icon">
+            ><div class="icon__background">
               <svg
-                width="22"
-                height="22"
+                width="26"
+                height="26"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +223,7 @@
       </div>
     </section>
 
-    <section class="projects margin">
+    <section class="projects margin" id="projects">
       <div class="wrapper">
         <h1>Projects</h1>
         <div class="frame">
@@ -242,29 +239,36 @@
         </div>
     </section>
 
-    <section class="services margin">
+    <section class="services margin" id="services">
       <div class="wrapper">
         <h1>Services</h1>
-        <div class="frame__two">
-          <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24.4128 21L34.4128 11L24.4128 1.00003" stroke="#00DF5E" stroke-width="1.39167" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11.0795 1.00003L1.07953 11L11.0795 21" stroke="#00DF5E" stroke-width="1.39167" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="service__detail">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 4.5H17C17.9569 4.5 18.6244 4.50106 19.1279 4.56876C19.6171 4.63453 19.8762 4.75483 20.0607 4.93934C20.2452 5.12385 20.3655 5.3829 20.4312 5.87208C20.4989 6.37565 20.5 7.04306 20.5 8V16.5H3.5V8C3.5 7.04306 3.50106 6.37565 3.56876 5.87208C3.63453 5.3829 3.75483 5.12385 3.93934 4.93934C4.12385 4.75483 4.3829 4.63453 4.87208 4.56876C5.37565 4.50106 6.04306 4.5 7 4.5Z" stroke="white"/>
+            <path d="M20.3333 16.5H3.66667C3.02233 16.5 2.5 17.0223 2.5 17.6667C2.5 18.6792 3.32081 19.5 4.33333 19.5H19.6667C20.6792 19.5 21.5 18.6792 21.5 17.6667C21.5 17.0223 20.9777 16.5 20.3333 16.5Z" stroke="white"/>
             </svg>
-            <h2>Website Building</h2>
+            <h2>Web Development</h2>
         </div>
 
-        <div class="frame__two">
+        <div class="service__detail">
           <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.6251 3.25006H11.3751C9.58014 3.25006 8.12506 4.70514 8.12506 6.50006V32.5001C8.12506 34.295 9.58014 35.7501 11.3751 35.7501H27.6251C29.42 35.7501 30.8751 34.295 30.8751 32.5001V6.50006C30.8751 4.70514 29.42 3.25006 27.6251 3.25006Z" stroke="#00DF5E" stroke-width="1.39286" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M19.5 29.25H19.5171" stroke="#00DF5E" stroke-width="1.39286" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            
             <h2>Responsive Web Design</h2>
         </div>
+
+        <div class="service__detail">
+          <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.4128 21L34.4128 11L24.4128 1.00003" stroke="#00DF5E" stroke-width="1.39167" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.0795 1.00003L1.07953 11L11.0795 21" stroke="#00DF5E" stroke-width="1.39167" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2>Clean Code</h2>
+        </div>   
       </div>
     </section>
 
-    <section class="skills margin">
+    <section class="stack margin">
       <div class="wrapper">
         <h1>My skills</h1>
         <div class="grid">
