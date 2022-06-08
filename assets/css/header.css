@@ -1,16 +1,7 @@
-header {
+.header {
   padding-top: 10rem;
   text-align: center;
   width: 100%;
-}
-
-header h2 {
-  color: var(--gray);
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 2.1rem;
-
-  padding-bottom: 3.2rem;
 }
 
 .buttons {
@@ -18,6 +9,7 @@ header h2 {
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
+  margin-top: 2rem;
 }
 
 .button {
@@ -30,27 +22,27 @@ header h2 {
 }
 
 .button--download {
-  background-color: var(--light-blue);
+  background-color: var(--highlight);
   border: 1px solid transparent;
-  color: var(--dark);
+  color: var(--background);
 }
 
 .button--contact {
-  background-color: var(--dark);
+  background-color: var(--background);
   border: 1px solid var(--gray-medium);
   color: var(--white);
 }
 
 .button--download:hover {
-  background-color: var(--dark);
+  background-color: var(--background);
   border: 1px solid var(--gray-medium);
   color: var(--white);
   transition: .5s;
 }
 
 .button--contact:hover {
-  background-color: var(--light-blue);
+  background-color: var(--highlight);
   border: 1px solid transparent;
-  color: var(--dark);
+  color: var(--background);
   transition: .5s;
 }
