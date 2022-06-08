@@ -1,0 +1,132 @@
+nav {
+  display: flex;
+
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  z-index: 100;
+}
+
+nav .wrapper {
+  background-color: var(--background);
+  height: 5rem;
+  color: var(--white);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background-color: transparent;
+  color: var(--highlight);
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu expanded */
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded> :not(nav) {
+  visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  transform: translateY(-100%);
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+
+  width: 100vw;
+  height: 100vh;
+
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  margin-top: 7rem;
+  padding-bottom: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.nav__links a {
+  color: var(--white);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav__links a::after {
+  background-color: var(--highlight);
+  content: '';
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  position: absolute;
+  transition: .5s;
+}
+
+.nav__links a:hover {
+  color: var(--white);
+}
+
+.nav__links a:hover::after {
+  width: 100%;
+}
+
+.nav__links a:active {
+  color: var(--highlight);
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.menu .social__links svg:hover {
+  filter: drop-shadow(0px 1px 10px #73FFD6);
+  transition: .5s;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 1;
+}
