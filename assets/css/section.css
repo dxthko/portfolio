@@ -43,6 +43,7 @@
 .frame {
   background-color: var(--gray-dark);
   border: 0.725px solid var(--gray-medium);
+  border-radius: .5rem;
   height: 17.4rem;
   width: 32rem;
 
@@ -61,7 +62,7 @@
 }
 
 .inner__frame:hover {
-  border: 0.725px solid var(--highlight);
+  border: 0.725px solid var(--hover);
 }
 
 .frame p {
@@ -88,6 +89,7 @@
   position: relative;
 
   background-color: var(--gray-dark);
+  border-radius: .5rem;
   color: var(--gray);
   height: 14rem;
   width: 32rem;
@@ -120,7 +122,8 @@
 
 .service__detail:hover::after,
 .service__detail:hover::before {
-  border-color: var(--highlight);
+  border-color: var(--hover);
+  border-radius: .5rem;
   width: 100%;
   height: 100%;
 }

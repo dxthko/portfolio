@@ -11,11 +11,13 @@
   /* 1rem = 10px */
 
   --background: #171717;
-  --highlight: #FCA311;
   --white: #f9f9f9;
   --gray: #828282;
   --gray-medium: #333333;
   --gray-dark: #212121;
+
+  --highlight: #FCA311;
+  --hover: #FD9346;
 
   --dm-sans: 'DM Sans', sans-serif;
 }

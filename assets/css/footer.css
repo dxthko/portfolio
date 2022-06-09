@@ -4,6 +4,8 @@
   align-items: center;
 
   background-color: var(--gray-dark);
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 
   color: var(--white);
   font-size: 1.2rem;
