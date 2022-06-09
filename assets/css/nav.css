@@ -5,7 +5,7 @@
   top: 0;
 
   width: 100vw;
-  z-index: 100;
+  z-index: 1;
 }
 
 .nav__content {
@@ -114,11 +114,11 @@ body.menu-expanded .menu {
   color: var(--highlight);
 }
 
-.social__icons {
+.social__icons{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.7rem;
 }
 
 .social__icons svg {
