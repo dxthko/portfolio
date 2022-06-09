@@ -121,9 +121,12 @@ body.menu-expanded .menu {
   gap: 3.2rem;
 }
 
-.menu .social__links svg:hover {
-  filter: drop-shadow(0px 1px 10px #73FFD6);
-  transition: .5s;
+.social__icons svg {
+  transition: .3s ease-in-out;
+}
+
+.social__icons svg:hover {
+  filter: drop-shadow(0px 0px 5px #FD9346);
 }
 
 body.menu-expanded .logo,
