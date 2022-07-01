@@ -117,22 +117,44 @@
           </ul>
         </div>
 
+        
         <button 
-        aria-expanded="false"
-        aria-label="Abrir menu"
-        onclick="openMenu()"
-        class="open-menu">
-          <i class="fa-solid fa-bars"></i>
+          aria-expanded="false"
+          aria-label="Open menu"
+          onclick="openMenu()"
+          class="open-menu">
+
+          <svg 
+            width="24" 
+            height="24" v
+            viewBox="0 0 24 24" 
+            fill="none"
+            class="stroke"
+            xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 6H3"  stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M21 12H3"  stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M21 18H3"  stroke-width="1.5"  stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <button 
+          aria-expanded="true"
+          aria-label="Close menu"
+          onclick="closeMenu()"
+          class="close-menu">
+        
+            <svg 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              class="stroke"
+              xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18"  stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M18 18L6 6"  stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
         </button>
         
-        <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          onclick="closeMenu()"
-          class="close-menu"
-        >
-          <i class="fa-solid fa-xmark"></i>
-        </button>
       </div>
     </nav>
 
@@ -305,12 +327,26 @@
       </div>
     </section>
 
-    <section class="stack margin">
-      <div class="wrapper">
-        <h1>My stack</h1>
-      </div>
-    </section>
+    <div class="wrapper margin to__top">
+      <button onclick="toTop()" class="to__top--btn" >
+        <svg 
+        width="30" 
+        height="30" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.1186 5L6.7406 9.21875M12.1186 20V5V20ZM12.1186 5L17 9.21875L12.1186 5Z" stroke="#FCA311" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <input type="checkbox" class="checkbox" id="checkbox">
 
+      <label for="checkbox" class="label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    
     <footer>
       <div class="wrapper">
         <div class="footer">
@@ -319,6 +355,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/assets/js/script.js"></script>
+
   </body>
 </html>
