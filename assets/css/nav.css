@@ -1,5 +1,7 @@
 .nav__bar {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 
   position: fixed;
   top: 0;
@@ -9,22 +11,25 @@
 }
 
 .nav__content {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+
   background-color: var(--background);
   height: 5rem;
-  color: var(--white);
-
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+body.light .nav__content {
+  background-color: var(--light-mode-white);
+  border: 1px solid var(--background);
+  border-top: transparent;
+}
+
 .nav__content button {
   background-color: transparent;
-  color: var(--highlight);
   border: none;
   cursor: pointer;
 }
@@ -69,6 +74,10 @@ body.menu-expanded .menu {
   transition: transform 300ms ease-in-out;
 }
 
+body.light.menu-expanded .menu {
+  background-color: var(--light-mode-white);
+}
+
 .nav__links {
   display: flex;
   flex-direction: column;
@@ -88,6 +97,10 @@ body.menu-expanded .menu {
   color: var(--white);
   position: relative;
   text-decoration: none;
+}
+
+body.light .nav__links a {
+  color: var(--background);
 }
 
 .nav__links a::after {
@@ -114,11 +127,15 @@ body.menu-expanded .menu {
   color: var(--highlight);
 }
 
+body.light .nav__links a:active {
+  color: var(--light-mode-orange);
+}
+
 .social__icons{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.7rem;
+  gap: 1.6rem;
 }
 
 .social__icons svg {
@@ -128,6 +145,10 @@ body.menu-expanded .menu {
 .social__icons svg:hover {
   filter: drop-shadow(0px 0px 5px #FD9346);
 }
+
+body.light .social__icons svg:hover {
+  filter: none;
+} 
 
 body.menu-expanded .logo,
 body.menu-expanded button {

@@ -13,6 +13,10 @@
   line-height: 170%;
 }
 
+body.light .about p{
+  color: var(--gray-medium);
+}
+
 /* Social links */
 
 .medias {
@@ -33,8 +37,13 @@
   transition: .3s ease-in-out;
 }
 
+body.light .icon__background {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
+}
+
 .icon__background:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Projects */
@@ -55,6 +64,11 @@
   padding-inline: 1.6rem;
 }
 
+body.light .frame {
+  background-color: transparent;
+  border: 0.725px solid var(--background);
+}
+
 .frame:not(:last-child) {
   margin-bottom: 2.4rem;
 }
@@ -69,6 +83,10 @@
   height: 10rem;
   transition: .3s ease-in;
   opacity: 0.5;
+}
+
+body.light .inner__frame {
+  opacity: 1;
 }
 
 .inner__frame:hover {
@@ -127,6 +145,10 @@
   transition: .3s ease-in-out;
 }
 
+body.light .service__detail {
+  background-color: transparent;
+}
+
 .service__detail::before {
   position: absolute;
   content: '';
@@ -157,6 +179,12 @@
   border-radius: .5rem;
   width: 100%;
   height: 100%;
+}
+
+body.light 
+.service__detail:hover::after,
+.service__detail:hover::before {
+  border-color: var(--light-mode-orange);
 }
 
 .service__detail:hover {

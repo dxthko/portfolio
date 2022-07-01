@@ -12,4 +12,11 @@
   line-height: 1.6rem;
   height: 4rem;
   width: 100%;
+
+}
+
+body.light .footer {
+  background-color: var(--light-mode-white);
+  border: 1px solid var(--gray-dark);
+  color: var(--background);
 }
