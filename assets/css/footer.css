@@ -17,6 +17,5 @@
 
 body.light .footer {
   background-color: var(--light-mode-white);
-  border: 1px solid var(--gray-dark);
   color: var(--background);
 }

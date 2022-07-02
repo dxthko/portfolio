@@ -27,10 +27,21 @@
   color: var(--background);
 }
 
+body.light .button--download {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
+}
+
 .button--contact {
   background-color: var(--background);
   border: 1px solid var(--gray-medium);
   color: var(--white);
+}
+
+body.light .button--contact {
+  background-color: var(--light-mode-orange);
+  border: 1px solid transparent;
+  color: var(--background);
 }
 
 .button--download:hover {
@@ -40,9 +51,19 @@
   transition: .5s;
 }
 
+body.light .button--download:hover {
+  background-color: var(--light-mode-orange);
+  color: var(--background);
+}
+
 .button--contact:hover {
   background-color: var(--highlight);
   border: 1px solid transparent;
   color: var(--background);
   transition: .5s;
+}
+
+body.light .button--contact:hover {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
 }

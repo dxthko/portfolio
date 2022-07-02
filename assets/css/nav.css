@@ -24,7 +24,6 @@
 
 body.light .nav__content {
   background-color: var(--light-mode-white);
-  border: 1px solid var(--background);
   border-top: transparent;
 }
 

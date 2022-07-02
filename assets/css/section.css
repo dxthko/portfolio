@@ -55,7 +55,7 @@ body.light .icon__background {
 
 .frame {
   background-color: var(--gray-dark);
-  border: 0.725px solid var(--gray-medium);
+  border: 0.5px solid var(--gray-medium);
   border-radius: .5rem;
   height: 17.4rem;
   width: 32rem;
@@ -66,7 +66,7 @@ body.light .icon__background {
 
 body.light .frame {
   background-color: transparent;
-  border: 0.725px solid var(--background);
+  border: transparent;
 }
 
 .frame:not(:last-child) {
