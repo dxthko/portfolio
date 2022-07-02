@@ -23,7 +23,7 @@
 }
 
 body.light .nav__content {
-  background-color: var(--light-mode-white);
+  background-color: transparent;
   border-top: transparent;
 }
 

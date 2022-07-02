@@ -47,6 +47,7 @@ body {
 
 body.light {
   background-color: var(--light-mode-white);
+  transition: .5s ease;
 }
 
 ul {

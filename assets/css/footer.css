@@ -16,6 +16,6 @@
 }
 
 body.light .footer {
-  background-color: var(--light-mode-white);
+  background-color: transparent;
   color: var(--background);
 }
