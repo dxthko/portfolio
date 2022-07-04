@@ -1,0 +1,117 @@
+/* General classes */
+
+body.light {
+  background-color: var(--light-mode-white);
+  transition: .5s ease;
+}
+
+body.light span {
+  color: var(--light-mode-orange);
+}
+
+body.light h1 {
+  color: var(--background);
+}
+
+body.light h2 {
+  color: var(--gray-medium);
+}
+
+body.light h3 {
+  color: var(--background);
+}
+
+body.light h4 {
+  color: var(--background);
+}
+
+body.light .fill {
+  fill: var(--light-mode-orange);
+}
+
+body.light .stroke {
+  stroke: var(--light-mode-orange);
+}
+
+/* Header */
+
+body.light .button--download {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
+}
+
+body.light .button--contact {
+  background-color: var(--light-mode-orange);
+  border: 1px solid transparent;
+  color: var(--background);
+}
+
+body.light .button--download:hover {
+  background-color: var(--light-mode-orange);
+  color: var(--background);
+}
+
+body.light .button--contact:hover {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
+}
+
+/* Nav links */
+
+body.light .nav__content {
+  background-color: var(--light-mode-white);
+  border-top: transparent;
+}
+
+body.light.menu-expanded .menu {
+  background-color: var(--light-mode-white);
+}
+
+body.light .nav__links a {
+  color: var(--background);
+}
+
+body.light .nav__links a:active {
+  color: var(--light-mode-orange);
+}
+
+body.light .social__icons svg:hover {
+  filter: none;
+} 
+
+/* Sections */
+
+body.light .about p{
+  color: var(--gray-medium);
+}
+
+body.light .icon__background {
+  background-color: transparent;
+  border: 1px solid var(--light-mode-orange);
+}
+
+body.light .frame {
+  background-color: transparent;
+  border: transparent;
+}
+
+body.light .inner__frame {
+  opacity: 1;
+}
+
+body.light .service__detail {
+  background-color: transparent;
+}
+
+body.light 
+.service__detail:hover::after,
+.service__detail:hover::before {
+  border-color: var(--light-mode-orange);
+}
+
+/* Footer */
+
+body.light .footer {
+  background-color: transparent;
+  color: var(--background);
+}
