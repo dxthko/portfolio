@@ -91,22 +91,27 @@ body.light .icon__background {
 }
 
 body.light .frame {
-  background-color: transparent;
+  background-color: var(--offwhite);
   border: transparent;
 }
 
 body.light .inner__frame {
+  border: 1px solid var(--light-mode-white);
   opacity: 1;
 }
 
 body.light .service__detail {
-  background-color: transparent;
+  background-color: var(--offwhite);
 }
 
 body.light 
 .service__detail:hover::after,
 .service__detail:hover::before {
   border-color: var(--light-mode-orange);
+}
+
+body.light .service__detail:hover {
+  background-color: var(--silver);
 }
 
 /* Footer */
@@ -120,10 +125,11 @@ body.light .footer {
 
 body.light .to__top--btn {
   background-color: var(--light-mode-white);
+  border: 1px solid var(--light-mode-orange);
 }
 
 body.light .to__top--btn:hover {
-  border: 1px solid var(--light-mode-orange);
+  background-color: var(--offwhite);
 }
 
 /* Toggle light/dark mode */
