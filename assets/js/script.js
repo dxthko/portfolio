@@ -1,4 +1,4 @@
-/* show / hide nav menu */
+/* Show/Hide nav menu */
 
 function openMenu() {
   document.body.classList.add('menu-expanded')
@@ -8,18 +8,18 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
-/* back to top button */
+/* Back to top button */
 
 const toTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
-/* toggle light/dark mode */
+/* Toogle light/dark mode */
 
 const checkbox = document.getElementById('checkbox')
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('light')
 })
 
-/* scroll reveal lib */
+/* Scroll reveal lib */
 ScrollReveal({
   origin: 'top',
   distance: '30px',
