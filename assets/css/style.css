@@ -89,12 +89,6 @@ h4 {
 
 /* To top button */
 
-.to__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .to__top--btn {
   background-color: var(--gray-medium);
   cursor: pointer;
