@@ -115,3 +115,24 @@ body.light .footer {
   background-color: transparent;
   color: var(--background);
 }
+
+/* To top button */
+
+body.light .to__top--btn {
+  background-color: var(--light-mode-white);
+}
+
+body.light .to__top--btn:hover {
+  border: 1px solid var(--light-mode-orange);
+}
+
+/* Toggle light/dark mode */
+
+body.light .label {
+  background-color: var(--light-mode-white);
+  border: 1px solid var(--light-mode-orange);
+}
+
+body.light .ball {
+  background-color: var(--background);
+}
