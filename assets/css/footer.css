@@ -14,8 +14,3 @@
   width: 100%;
 
 }
-
-body.light .footer {
-  background-color: transparent;
-  color: var(--background);
-}

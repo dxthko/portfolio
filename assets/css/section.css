@@ -13,10 +13,6 @@
   line-height: 170%;
 }
 
-body.light .about p{
-  color: var(--gray-medium);
-}
-
 /* Social links */
 
 .medias {
@@ -35,11 +31,6 @@ body.light .about p{
   height: 5rem;
   width: 5rem;
   transition: .3s ease-in-out;
-}
-
-body.light .icon__background {
-  background-color: transparent;
-  border: 1px solid var(--light-mode-orange);
 }
 
 .icon__background:hover {
@@ -64,11 +55,6 @@ body.light .icon__background {
   padding-inline: 1.6rem;
 }
 
-body.light .frame {
-  background-color: transparent;
-  border: transparent;
-}
-
 .frame:not(:last-child) {
   margin-bottom: 2.4rem;
 }
@@ -83,10 +69,6 @@ body.light .frame {
   height: 10rem;
   transition: .3s ease-in;
   opacity: 0.5;
-}
-
-body.light .inner__frame {
-  opacity: 1;
 }
 
 .inner__frame:hover {
@@ -145,10 +127,6 @@ body.light .inner__frame {
   transition: .3s ease-in-out;
 }
 
-body.light .service__detail {
-  background-color: transparent;
-}
-
 .service__detail::before {
   position: absolute;
   content: '';
@@ -181,12 +159,6 @@ body.light .service__detail {
   height: 100%;
 }
 
-body.light 
-.service__detail:hover::after,
-.service__detail:hover::before {
-  border-color: var(--light-mode-orange);
-}
-
 .service__detail:hover {
   background-color: var(--background);
 }
@@ -194,5 +166,3 @@ body.light
 .service__detail:not(:last-child) {
   margin-bottom: 2.4rem;
 }
-
-/* My stack */

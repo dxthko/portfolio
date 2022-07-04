@@ -1,3 +1,5 @@
+/* show / hide nav menu */
+
 function openMenu() {
   document.body.classList.add('menu-expanded')
 }
@@ -6,7 +8,11 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
+/* back to top button */
+
 const toTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+
+/* toggle light/dark mode */
 
 const checkbox = document.getElementById('checkbox')
 checkbox.addEventListener('change', () => {

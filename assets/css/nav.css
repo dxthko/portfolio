@@ -1,3 +1,5 @@
+/* Nav bar */
+
 .nav__bar {
   display: flex;
   align-items: center;
@@ -20,11 +22,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-body.light .nav__content {
-  background-color: transparent;
-  border-top: transparent;
 }
 
 .nav__content button {
@@ -73,10 +70,6 @@ body.menu-expanded .menu {
   transition: transform 300ms ease-in-out;
 }
 
-body.light.menu-expanded .menu {
-  background-color: var(--light-mode-white);
-}
-
 .nav__links {
   display: flex;
   flex-direction: column;
@@ -96,10 +89,6 @@ body.light.menu-expanded .menu {
   color: var(--white);
   position: relative;
   text-decoration: none;
-}
-
-body.light .nav__links a {
-  color: var(--background);
 }
 
 .nav__links a::after {
@@ -126,10 +115,6 @@ body.light .nav__links a {
   color: var(--highlight);
 }
 
-body.light .nav__links a:active {
-  color: var(--light-mode-orange);
-}
-
 .social__icons{
   display: flex;
   align-items: center;
@@ -144,10 +129,6 @@ body.light .nav__links a:active {
 .social__icons svg:hover {
   filter: drop-shadow(0px 0px 5px #FD9346);
 }
-
-body.light .social__icons svg:hover {
-  filter: none;
-} 
 
 body.menu-expanded .logo,
 body.menu-expanded button {
