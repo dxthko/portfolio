@@ -97,6 +97,7 @@ h4 {
 
 .to__top--btn {
   background-color: var(--gray-medium);
+  cursor: pointer;
   border: 1px solid transparent;
   border-radius: 50%;
   padding: .5rem;
@@ -131,6 +132,7 @@ h4 {
 
 .ball {
   background-color: white;
+  cursor: pointer;
   position: absolute;
   border-radius: 50%;
   top: 2px;
