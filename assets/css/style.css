@@ -100,7 +100,7 @@ h4 {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 50%;
-  padding: .5rem;
+  
   transition: .5s;
 }
 
